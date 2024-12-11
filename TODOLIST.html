@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+            <button id="clearAll" class="clear-btn">Tout supprimer</button>
+        </header>
+
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Ajouter une nouvelle tâche..." required>
+            <button type="submit" class="add-btn">Ajouter une tâche</button>
+        </form>
+
+        <div class="stats" id="stats">
+            <div class="stat">
+                <span class="stat-label">Total des tâches</span>
+                <span class="stat-value" id="totalTasks">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Tâches active</span>
+                <span class="stat-value" id="activeTasks">0</span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Completée</span>
+                <span class="stat-value" id="completedTasks">0</span>
+            </div>
+        </div>
+
+        <ul id="todoList" class="todo-list"></ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
